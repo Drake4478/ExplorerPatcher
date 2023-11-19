@@ -1,0 +1,14 @@
+﻿#include "resources/resource.h"
+#include "winres.h"
+
+LANGUAGE FRENCH, SUBLANG_FRENCH
+
+STRINGTABLE
+BEGIN
+    IDS_SETUP_UNINSTALL_PROMPT  "Êtes-vous sûr de vouloir supprimer ExplorerPatcher de votre PC ?"
+    IDS_SETUP_INSTALL_LOGOFF    "Pour l’installation, vous serez automatiquement déconnecté de Windows. ExplorerPatcher sera prêt à l’emploi lorsque vous vous reconnecterez.\n\nVoulez-vous continuer ?"
+    IDS_SETUP_UNINSTALL_LOGOFF  "Pour terminer la désinstallation, vous serez automatiquement déconnecté de Windows.\n\nVoulez-vous continuer?"
+    IDS_SETUP_UNINSTALL_RESTART "Veuillez redémarrer le PC pour terminer la désinstallation.\n\nVoulez-vous redémarrer maintenant ?"
+    IDS_SETUP_UNINSTALL_FINISH  "La désinstallation est terminée. Merci d’utiliser ExplorerPatcher."
+    IDS_SETUP_FAILED            "Une erreur s’est produite lors de la maintenance d’ExplorerPatcher.\nCela est probablement dû au fait qu’un ou plusieurs des fichiers de sauvegarde d’une mise à jour précédente sont toujours en cours d’utilisation. Le déverrouillage des fichiers devrait résoudre ce problème.\n\nÉtapes de dépannage:\n• Fermer et rouvrir le fichier ""Propriétés"" si elle est actuellement ouverte.\n• Arrêter et redémarrer tous les processus ""explorer.exe"".\n• Si vous avez enregistré ExplorerPatcher en tant qu’extension shell, le redémarrage du PC résoudra probablement ce problème.\n• Enfin, redémarrer le PC et réessayer."
+END
