@@ -1,0 +1,5 @@
+# ExplorerPatcher Bibliothèques personnalisées Chainloader
+
+ExplorerPatcher dispose d’un mécanisme simple et intégré qui permet aux utilisateurs de charger leur propre DLL dans 'explorer.exe' juste après qu’ExplorerPatcher ait fini d’initialiser ses hooks. Les utilisateurs intéressés doivent placer une DLL appelée 'ep_extra.dll' dans 'C :Windows'. Lorsque ExplorerPatcher a terminé sa configuration, il charge la bibliothèque 'ep_extra.dll' et appelle la fonction 'ep_extra_EntryPoint'. Bien que cela soit très utile pour que les utilisateurs puissent charger leur code personnalisé, il est assez limité pour le moment, car il ne charge qu’une seule DLL.
+
+Ce projet est une solution à ce problème. Un chargeur de chaîne est implémenté ici, qui recherche d’autres modules correspondant au modèle 'ep_extra_*.dll' dans 'C :Windows', et les charge l’un après l’autre.
